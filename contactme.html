@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="shortcut icon" href="/src/img/buakarrr.png" type="image/x-icon">
+    <link rel="icon" href="/src/img/buakarrr.png" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.38.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-white">
+   <nav id="navbar"
+    class="bg-white transition duration-300 ease-linear fixed w-full shadow-lg z-10 border-gray-200 px-2 sm:px-4 py-2.5 ">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <div class="dropdown dropdown-right">
+            <label tabindex="0" class="btn btn-ghost btn-link">
+                <div class="w-14">
+                    <img class="rounded-full" src="/src/img/undraw_Pic_profile_re_i9i4.png" />
+                </div>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52">
+                <li>
+                    <a href="#" class="justify-between">
+                        Profile
+                        <span class="badge">New</span>
+                    </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a href="#my-modal-2">Logout</a></li>
+            </ul>
+        </div>
+        <div class="flex md:order-2">
+            <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                aria-expanded="false"
+                class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+                <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Search</span>
+            </button>
+            <div class="hidden relative md:block">
+                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="sr-only">Search icon</span>
+                </div>
+                <input type="text" id="search-navbar"
+                    class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg" placeholder="Search...">
+            </div>
+            <button data-collapse-toggle="navbar-search" type="button"
+                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-search" aria-expanded="false">
+                <span class="sr-only">Open menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-search">
+            <div class="relative mt-3 md:hidden">
+                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <input type="text" id="search-navbar" class="block p-2 pl-10 rounded-lg bg-white w-full"
+                    placeholder="Search...">
+
+            </div>
+
+            <ul
+                class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+                <li>
+                    <a href="index.html"
+                        class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-100  rounded md:bg-transparent md:hover:text-blue-700 md:p-0 "
+                        aria-current="page">Beranda</a>
+                </li>
+                <li>
+                    <a href="index.html"
+                        class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tentang
+                        Saya</a>
+                </li>
+                <li>
+                    <a href="index.html"
+                        class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portfolio</a>
+                </li>
+                <li>
+                    <a href="index.html"
+                        class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+<section class="bg-slate-300 w-full h-screen">
+    <svg class="absolute top-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="
+        #f1f5f9" fill-opacity="1" d="M0,128L480,224L960,192L1440,224L1440,0L960,0L480,0L0,0Z"></path>
+    </svg>
+    <div class="container h-screen w-full justify-center items-center flex ">
+        <div class="card overflow-hidden z-10 h-[700px] w-[800px] mt-20 flex justify-center items-center bg-white">
+            <div class="card-body flex justify-center items-center">
+                <h1 class="font-ComicNeue text-5xl">Contact me</h1>
+                <form class="space-y-4 mt-14 md:space-y-6" name="Contact" action="#" method="POST" data-netlify="true">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-teal-500">Your email</label>
+                        <input type="email" name="email" id="email" class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 bg-slate-400 placeholder-slate-300 " placeholder="Example@gmail.com" required="">
+                    </div>
+                    <div>
+                        <label for="password" class="block mb-2 text-sm font-medium text-teal-500">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Masukan sandi anda" class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-[20rem] p-2.5 bg-slate-400 placeholder-slate-300 " required="">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                              <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 roundedfocus:ring-3 focus:ring-primary-300  bg-slate-400 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
+                            </div>
+                            <div class="ml-3 text-sm">
+                              <label for="remember" class="text-gray-500 dark:text-gray-300">Remember me</label>
+                            </div>
+                        </div>
+                        <a href="#" class="text-sm font-medium text-primary-600 ml-3 hover:underline dark:text-primary-500"> Forgot password?</a>
+                    </div>
+                    <button type="submit" class="w-full bg-slate-400 text-white px-5 py-3 rounded-lg">Sign in</button>
+                    <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                        Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <svg class="absolute rotate-180 bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="
+        #f1f5f9" fill-opacity="1" d="M0,128L480,224L960,192L1440,224L1440,0L960,0L480,0L0,0Z"></path>
+    </svg>
+</section>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="scroll.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
